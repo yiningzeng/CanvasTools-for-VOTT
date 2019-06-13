@@ -311,7 +311,10 @@ export class Editor {
      * Callback for `AreaSelector` called when user ended selecting (creating) new region.
      */
     public onSelectionEnd: SelectionConfirmFunction;
-
+    /**
+     * Reference to the host canvas element.
+     */
+    private contentCanvas: HTMLCanvasElement;
     /**
      * Internal reference to the proxi of APIs.
      */
@@ -341,11 +344,6 @@ export class Editor {
      * Reference to the host SVG element.
      */
     private editorSVG: SVGSVGElement;
-
-    /**
-     * Reference to the host canvas element.
-     */
-    private contentCanvas: HTMLCanvasElement;
 
     /**
      * Reference to the host div element (contains SVG and Canvas elements).

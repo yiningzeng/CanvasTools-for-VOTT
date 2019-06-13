@@ -94,3 +94,5 @@ typings/
 lib/
 dist/
 plato-report/
+
+\.idea/workspace\.xml
